@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>Data type</title>
+        <script>
+            function data_type(value) {
+                var typesofData = [Function, RegExp, Number, String, Boolean, Object], x, len;
+                if (typeof value === "object" || typeof value === "function") {
+                    for (x = 0, len = typesofData.length; x < len; x++) {
+                        if (value instanceof typesofData[x]){
+                            return typesofData[x];
+                        }
+                    }
+                }
+                return typeof value;
+            }
+            console.log(data_type(12));
+            document.write("Data type of '12' is :"+data_type(12)+"<br>");
+            console.log(data_type('w3resource'));
+            document.write("Data type of 'w3resource' is :"+data_type('w3resource')+"<br>");
+            console.log(data_type(false));
+            document.write("Data type of 'true and false' is :"+data_type(false)+"<br>");
+        </script>
+    </head>
+    <body>
+        
+    </body>
+
+</html>

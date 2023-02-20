@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>Leap year</title>
+        <script>
+            let year = prompt(parseInt());
+            if ((year%4==0 && year%100!=0) || year%400==0) {
+                console.log(`${year} is leap year`);
+                document.write(`${year} is leap year`);
+            }  
+            else {
+                console.log(`${year} is not leap year`);
+                document.write(`${year} is not leap year`);
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+
+</html>

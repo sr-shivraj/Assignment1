@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>Check Array</title>
+        <script>
+
+            var is_array = function(input) {
+                if (toString.call(input) === "[object Array]")
+                 return true;
+                return false;   
+            }
+            console.log(is_array('w3resource'));
+            document.write(is_array('w3resource')+"<br>");
+            console.log(is_array([1, 2, 4, 0]));
+            document.write(is_array([1, 2, 4, 0]));
+        </script>
+    </head>
+    <body>
+        
+    </body>
+
+</html>
